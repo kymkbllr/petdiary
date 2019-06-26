@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sahiplen"
+        android:icon="@drawable/ic_block_black_24dp"
+        android:title="sahiplen" />
+    <item
+        android:id="@+id/bakici_bul"
+        android:icon="@drawable/ic_block_black_24dp"
+        android:title="bakıcı" />
+    <item
+        android:id="@+id/veteriner"
+        android:icon="@drawable/ic_block_black_24dp"
+        android:title="veteriner" />
+    <item
+        android:id="@+id/diger"
+        android:icon="@drawable/ic_block_black_24dp"
+        android:title="diger" />
+
+</menu>
