@@ -1,5 +1,7 @@
 package com.example.petdiary;
 
+import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -7,23 +9,38 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private Button sahiplen;
+    private String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sahiplendirme_sayfasi);
+        setContentView(R.layout.activity_main);
 
-        toolbar = findViewById(R.id.toolbar);
+       // toolbar = findViewById(R.id.toolbar);
+//
+       // toolbar.setTitle("Sahiplendirme Sayfası");
+       // toolbar.setTitleTextColor(getResources().getColor(R.color.mavi));
+       // setSupportActionBar(toolbar);
 
-        toolbar.setTitle("Sahiplendirme Sayfası");
-        toolbar.setTitleTextColor(getResources().getColor(R.color.mavi));
-        setSupportActionBar(toolbar);
+
+
+//
     }
 
 

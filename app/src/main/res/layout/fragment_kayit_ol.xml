@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- TODO 2- olusturduğun viewlere id ver  -->
+
+    <TextView
+        android:id="@+id/kayit_ol_baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="KAYIT OL"
+        android:textColor="#859398"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kayit_ol_kullanici_adi_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="kullanıcı adı"
+        android:inputType="textPersonName"
+        android:textColor="#859398"
+        android:textColorHint="#859398"
+        app:layout_constraintBottom_toTopOf="@+id/kayit_ol_sifre_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_baslik"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/kayit_ol_sifre_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="şifre giriniz..."
+        android:inputType="textPassword"
+        android:textColor="#859398"
+        android:textColorHint="#859398"
+        app:layout_constraintBottom_toTopOf="@+id/kayit_ol_adi_et"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_kullanici_adi_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_kullanici_adi_et"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_kullanici_adi_et" />
+
+    <EditText
+        android:id="@+id/kayit_ol_adi_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="adı"
+        android:inputType="textPersonName"
+        android:textColor="#859398"
+        android:textColorHint="#859398"
+        app:layout_constraintBottom_toTopOf="@+id/kayit_ol_mail_et"
+        app:layout_constraintEnd_toStartOf="@+id/kayit_ol_soyadi_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_kullanici_adi_et"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_sifre_et" />
+
+    <EditText
+        android:id="@+id/kayit_ol_soyadi_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="soyadı"
+        android:inputType="textPersonName"
+        android:textColor="#859398"
+        android:textColorHint="#859398"
+        app:layout_constraintBottom_toBottomOf="@+id/kayit_ol_adi_et"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_kullanici_adi_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/kayit_ol_adi_et"
+        app:layout_constraintTop_toTopOf="@+id/kayit_ol_adi_et" />
+
+    <EditText
+        android:id="@+id/kayit_ol_mail_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColor="#859398"
+        android:textColorHint="#859398"
+        app:layout_constraintBottom_toTopOf="@+id/kayit_ol_adres_et"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_kullanici_adi_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_kullanici_adi_et"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_adi_et" />
+
+    <EditText
+        android:id="@+id/kayit_ol_adres_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="adress"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:minHeight="120dp"
+        android:textColor="#859398"
+        android:textColorHint="#859398"
+        app:layout_constraintBottom_toTopOf="@+id/kayit_ol_kaydet_btn"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_mail_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_mail_et"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_mail_et" />
+
+    <Button
+        android:id="@+id/kayit_ol_kaydet_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="#283048"
+        android:text="Beni Kaydet"
+        android:textColor="#859398"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_adres_et"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_adres_et"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_adres_et" />
+</android.support.constraint.ConstraintLayout>

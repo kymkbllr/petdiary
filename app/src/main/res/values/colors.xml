@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="colorA">#ba68c8</color>
-    <color name="colorAc">#ec407a</color>
-    <color name="red">#991F1F</color>
-    <color name="green">#5CB865</color>
-    <color name="mavi">#3F51B5</color>
-    <color name="sarı">#CDDC39</color>
+    <color name="colorPrimary">#283048</color>
+    <color name="colorPrimaryDark">#283048</color>
+    <color name="colorAccent">#283048</color>
     <color name="mor">#673AB7</color>
     <color name="turuncu">#FF5722</color>
-    <color name="mavimsi">#03A9F4</color>
     <color name="turuncumsu">#F44336</color>
+    <color name="mavim">#283048</color>
+    <color name="grim">#859398</color>
 
 </resources>
